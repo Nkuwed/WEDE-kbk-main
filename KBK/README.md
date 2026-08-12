@@ -13,6 +13,7 @@ KreatedByKeora/
 ├── services.html        Services — filterable price list with portfolio images
 ├── enquiry.html          Booking form — validated client-side, policies, POPIA note
 ├── contact.html          Map, WhatsApp/call, socials, small contact form
+├── art_work.html         Nail art samples that were completed by Keora
 ├── css/
 │   └── style.css        Design tokens, layout, components
 ├── js/
