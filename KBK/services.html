@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services &amp; Pricing — KreatedByKeora</title>
+<meta name="description" content="Manicures, Gel-X extensions, custom nail art and pedicures with indicative pricing at KreatedByKeora, Kibler Park.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="back-link">
+      <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      Back
+    </a>
+    <nav class="top-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="about.html">About</a>
+      <a href="enquiry.html">Enquiry</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" data-menu-open>
+      <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="drawer" data-drawer>
+  <div class="drawer-panel">
+    <button class="drawer-close" aria-label="Close menu" data-menu-close>&times;</button>
+    <nav aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="enquiry.html">Book / Enquire</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+
+    <section style="padding-bottom:6px;">
+      <span class="eyebrow">Menu</span>
+      <h1>Services &amp; Pricing</h1>
+      <div class="swipe"></div>
+      <p>Indicative pricing per treatment. Final price confirmed at booking based on nail length and design complexity.</p>
+    </section>
+
+    <!-- Sort / filter, per wireframe -->
+    <section style="padding-top:0;">
+      <div class="chip-row" data-filter-row>
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="manicure">Manicures</button>
+        <button class="chip" data-filter="gel-x">Gel-X</button>
+        <button class="chip" data-filter="nail-art">Nail Art</button>
+        <button class="chip" data-filter="pedicure">Pedicures</button>
+      </div>
+    </section>
+
+    <section style="padding-top:0;">
+      <div class="grid-2" data-service-grid>
+
+        <article class="service-card" data-category="manicure" id="manicures">
+          <div class="thumb"><img src="images/portfolio/pink-french-charms.jpeg" alt="Classic manicure with soft pink polish"></div>
+          <div class="service-body">
+            <h3>Classic Manicure</h3>
+            <span class="price">From R150</span>
+            <p>Shape, cuticle care and a clean polish finish.</p>
+          </div>
+        </article>
+
+        <article class="service-card" data-category="gel-x" id="gel-x">
+          <div class="thumb"><img src="images/portfolio/pink-french-charms.jpeg" alt="Gel-X extensions with charm accents"></div>
+          <div class="service-body">
+            <h3>Gel-X Extensions</h3>
+            <span class="price">From R350</span>
+            <p>Lightweight, long-lasting length in your choice of shape.</p>
+          </div>
+        </article>
+
+        <article class="service-card" data-category="nail-art" id="nail-art">
+          <div class="thumb"><img src="images/portfolio/gold-jewel-nails.jpeg" alt="Custom gold jewelled nail art"></div>
+          <div class="service-body">
+            <h3>Custom Nail Art</h3>
+            <span class="price">From R450</span>
+            <p>Hand-painted, jewelled or dramatic sculptural designs.</p>
+          </div>
+        </article>
+
+        <article class="service-card" data-category="gel-x" id="gel-overlay">
+          <div class="thumb"><img src="images/portfolio/gold-jewel-nails.jpeg" alt="Gel overlay on natural nails"></div>
+          <div class="service-body">
+            <h3>Gel Overlay</h3>
+            <span class="price">From R250</span>
+            <p>Strengthens and glosses your natural nail with gel.</p>
+          </div>
+        </article>
+
+        <article class="service-card" data-category="pedicure" id="pedicures">
+          <div class="thumb"><img src="images/portfolio/pink-french-charms.jpeg" alt="Pedicure treatment" style="filter:hue-rotate(6deg);"></div>
+          <div class="service-body">
+            <h3>Pedicure</h3>
+            <span class="price">From R200</span>
+            <p>Soak, exfoliation and polish for tired feet.</p>
+          </div>
+        </article>
+
+        <article class="service-card" data-category="nail-art">
+          <div class="thumb"><img src="images/portfolio/gold-jewel-nails.jpeg" alt="Add-on nail art detailing" style="filter:hue-rotate(-8deg);"></div>
+          <div class="service-body">
+            <h3>Add-on Design</h3>
+            <span class="price">From R50</span>
+            <p>A single accent nail or extra detail added to any set.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <p id="empty-state" style="display:none;text-align:center;padding:24px 0;">No services in this category yet — check back soon.</p>
+    </section>
+
+    <section style="padding-top:0;">
+      <a href="enquiry.html" class="btn btn-primary btn-block">Book / Enquire About a Service</a>
+    </section>
+
+  </div>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="brand"><img src="images/hero/logo.jpeg" alt=""> KreatedByKeora</div>
+    <p>Nail artistry studio based in Kibler Park, Johannesburg South. Bookings via website form or WhatsApp.</p>
+    <div class="social-row">
+      <a class="social-btn whatsapp" href="https://wa.me/27000000000" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="social-btn" href="tel:+27000000000">Call</a>
+    </div>
+    <div class="footer-links">
+      <a href="https://instagram.com/kreatedbykeora" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://tiktok.com/@kreatedbykeora" target="_blank" rel="noopener">TikTok</a>
+      <a href="contact.html">Studio address</a>
+    </div>
+    <p>&copy; 2026 KreatedByKeora. All rights reserved.</p>
+  </div>
+</footer>
+
+<nav class="tab-bar" aria-label="Bottom">
+  <a href="index.html">
+    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10l9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V10z"/></svg>
+    Home
+  </a>
+  <a href="services.html" class="active">
+    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+    Services
+  </a>
+  <a href="enquiry.html" class="cta-tab"><span class="tab-pill">Enquiry</span></a>
+  <a href="contact.html">
+    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    Contact
+  </a>
+
+
+</nav>
+
+<script src="js/main.js"></script>
+</body>
+</html>

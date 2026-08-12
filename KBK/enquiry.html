@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book / Enquire — KreatedByKeora</title>
+<meta name="description" content="Book a nail appointment or send an enquiry to KreatedByKeora, Kibler Park, Johannesburg South.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="back-link">
+      <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      Back
+    </a>
+    <nav class="top-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="enquiry.html" class="active">Enquiry</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" data-menu-open>
+      <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="drawer" data-drawer>
+  <div class="drawer-panel">
+    <button class="drawer-close" aria-label="Close menu" data-menu-close>&times;</button>
+    <nav aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="enquiry.html">Book / Enquire</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+
+    <section style="padding-bottom:4px;">
+      <span class="eyebrow">Booking</span>
+      <h1>Book / Enquire</h1>
+      <div class="swipe"></div>
+      <p>Fill in your details and Keora will confirm your appointment by WhatsApp or email.</p>
+    </section>
+
+    <section style="padding-top:0;">
+      <form id="booking-form" novalidate>
+
+        <div class="field" data-field>
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="fullName" placeholder="e.g. Lerato Dlamini" required>
+          <span class="error-msg">Please enter your full name.</span>
+        </div>
+
+        <div class="field" data-field>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="e.g. 082 123 4567" required>
+          <span class="error-msg">Please enter a valid South African phone number.</span>
+        </div>
+
+        <div class="field" data-field>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="e.g. lerato@email.com" required>
+          <span class="error-msg">Please enter a valid email address.</span>
+        </div>
+
+        <div class="field" data-field>
+          <label for="service">Preferred Service</label>
+          <select id="service" name="service" required>
+            <option value="" selected disabled>Select a service</option>
+            <option value="classic-manicure">Classic Manicure — from R150</option>
+            <option value="gel-x">Gel-X Extensions — from R350</option>
+            <option value="custom-nail-art">Custom Nail Art — from R450</option>
+            <option value="gel-overlay">Gel Overlay — from R250</option>
+            <option value="pedicure">Pedicure — from R200</option>
+            <option value="not-sure">Not sure yet</option>
+          </select>
+          <span class="error-msg">Please select a service.</span>
+        </div>
+
+        <div class="field" data-field>
+          <label for="date">Preferred Date</label>
+          <input type="date" id="date" name="date" required>
+          <span class="error-msg">Please choose a preferred date.</span>
+        </div>
+
+        <div class="field">
+          <label for="reference">Reference Image <span style="text-transform:none;font-weight:500;color:var(--cream-dim);">(optional)</span></label>
+          <input type="file" id="reference" name="reference" accept="image/*" class="file-input">
+        </div>
+
+        <div class="field" data-field>
+          <label for="message">Message / Details</label>
+          <textarea id="message" name="message" placeholder="Tell Keora about the design, nail length or anything else she should know" required></textarea>
+          <span class="error-msg">Please add a short message so Keora knows what you'd like.</span>
+        </div>
+
+        <div class="policy-list" style="margin-bottom:18px;">
+          <div class="policy-item">
+            <h4>Deposit</h4>
+            <p>A non-refundable deposit is required to confirm every booking and is deducted from your final price.</p>
+          </div>
+          <div class="policy-item">
+            <h4>Late arrivals</h4>
+            <p>Arrivals more than 15 minutes late may be asked to rebook or a late fee may apply.</p>
+          </div>
+          <div class="policy-item">
+            <h4>Cancellations</h4>
+            <p>Cancellations made less than 24 hours before your appointment forfeit the deposit.</p>
+          </div>
+        </div>
+
+        <div class="privacy-note">
+          <strong>Your privacy:</strong> the details you share here are used only to confirm and manage your appointment, in line with POPIA. They are never sold or shared with third parties.
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        <div class="form-success" id="form-success">Thank you! Your enquiry has been received — Keora will confirm your booking by WhatsApp or email shortly.</div>
+      </form>
+    </section>
+
+  </div>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="brand"><img src="images/hero/logo.jpeg" alt=""> KreatedByKeora</div>
+    <p>Nail artistry studio based in Kibler Park, Johannesburg South. Bookings via website form or WhatsApp.</p>
+    <div class="social-row">
+      <a class="social-btn whatsapp" href="https://wa.me/27000000000" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="social-btn" href="tel:+27000000000">Call</a>
+    </div>
+    <div class="footer-links">
+      <a href="https://instagram.com/kreatedbykeora" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://tiktok.com/@kreatedbykeora" target="_blank" rel="noopener">TikTok</a>
+      <a href="contact.html">Studio address</a>
+    </div>
+    <p>&copy; 2026 KreatedByKeora. All rights reserved.</p>
+  </div>
+</footer>
+
+<nav class="tab-bar" aria-label="Bottom">
+  <a href="index.html">
+    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10l9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V10z"/></svg>
+    Home
+  </a>
+  <a href="services.html">
+    <svg width="30px" height="30px"viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+    Services
+  </a>
+  <a href="enquiry.html" class="cta-tab active"><span class="tab-pill">Enquiry</span></a>
+  <a href="contact.html">
+    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    Contact
+  </a>
+    
+
+</nav>
+
+<script src="js/main.js"></script>
+<script src="js/form-validation.js"></script>
+</body>
+</html>
