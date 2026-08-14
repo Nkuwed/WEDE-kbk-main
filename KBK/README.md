@@ -107,5 +107,9 @@ KreatedByKeora/
   a sticky bottom thumb-nav bar for one-handed browsing — the desktop
   breakpoint (≥860px) swaps in a conventional top nav.
 
+References 
+Glamour South Africa, 2025. Nailed it: 9 local nail artists who are changing the game. [online] Available at: [Accessed 27 July 2026].
+KreatedByKeora, [s.a.]. TikTok profile. [TikTok] Available at: [Accessed 27 July 2026].
+All images are taken from KreatedByKeora main business account from Instagram < https://www.instagram.com/kreatedbykeora/ > [Accessed: 28 July 2026]
 
 
